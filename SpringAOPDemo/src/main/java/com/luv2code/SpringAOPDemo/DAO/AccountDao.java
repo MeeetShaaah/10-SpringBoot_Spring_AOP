@@ -1,5 +1,7 @@
 package com.luv2code.SpringAOPDemo.DAO;
 
+import com.luv2code.SpringAOPDemo.Account;
+
 public interface AccountDao {
-    void addAccount();
+    void addAccount(Account theAccount);
 }

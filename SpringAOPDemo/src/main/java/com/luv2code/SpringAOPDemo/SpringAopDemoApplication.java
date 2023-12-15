@@ -22,7 +22,9 @@ public class SpringAopDemoApplication {
 	}
 
 	private void demoTheBeforeAdvice(AccountDao theAccountDao, MembershipDao theMembershipDao) {
-		theAccountDao.addAccount();
+
+		Account myAccount = new Account();
+		theAccountDao.addAccount(myAccount);
 		theMembershipDao.addAccount();
 	}
 }
