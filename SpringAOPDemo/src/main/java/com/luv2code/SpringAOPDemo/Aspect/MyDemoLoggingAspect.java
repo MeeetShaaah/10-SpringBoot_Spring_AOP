@@ -9,11 +9,21 @@ import org.springframework.stereotype.Component;
 @Component
 public class MyDemoLoggingAspect {
 
-    @Pointcut("execution(public void com.luv2code.SpringAOPDemo.DAO.*.*(*)))")
-    private void pointCutDeclaration(){}
+    @Pointcut("execution(* com.luv2code.SpringAOPDemo.DAO.*.*(..)))")
+    private void forDaoPackage(){}
 
-    @Before("pointCutDeclaration()")
+    @Pointcut("execution(* com.luv2code.SpringAOPDemo.DAO.*.get*(..)))")
+    private void getters(){}
+
+    @Pointcut("execution(* com.luv2code.SpringAOPDemo.DAO.*.set*(..)))")
+    private void setters(){}
+
+    @Pointcut("forDaoPackage() && !(getter() || setters())")
+    private void combineForDaoGetterSetter(){}
+
+    @Before("combineForDaoGetterSetter()")
     public void beforeAddingAccount() {
        System.out.println("\n====> Code in this Aspect block will run @Before running the addAccount()."); 
     }
 }
+
