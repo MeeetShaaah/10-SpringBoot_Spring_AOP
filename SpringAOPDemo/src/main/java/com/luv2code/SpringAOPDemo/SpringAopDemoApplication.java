@@ -1,5 +1,7 @@
 package com.luv2code.SpringAOPDemo;
 
+import java.util.List;
+
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -17,8 +19,19 @@ public class SpringAopDemoApplication {
 	@Bean
 	public CommandLineRunner commandLineRunner(AccountDao theAccountDao, MembershipDao theMembershipDao) {
 		return runner -> {
-			demoTheBeforeAdvice(theAccountDao, theMembershipDao);
+			// demoTheBeforeAdvice(theAccountDao, theMembershipDao);
+			demoOfAfterreturningAop(theAccountDao);
 		};
+	}
+
+	private void demoOfAfterreturningAop(AccountDao theAccountDao) {
+		List<Account> theAccounts = theAccountDao.findAccounts();
+
+		System.out.println("Running Main Program");
+
+		System.out.println(theAccounts);
+
+		System.out.println("\n");
 	}
 
 	private void demoTheBeforeAdvice(AccountDao theAccountDao, MembershipDao theMembershipDao) {
