@@ -1,0 +1,16 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ï¾¢“
+G
+java:S1602",Remove useless curly braces around statement(¸éâçýÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(áÅ±Ø
+E	java:S106!"+Replace this use of System.out by a logger.(û‹®ûÿÿÿÿ
+@	java:S106#"+Replace this use of System.out by a logger.(¿ôÑ
+E	java:S106'"+Replace this use of System.out by a logger.(Õ ý—ùÿÿÿÿ
+E	java:S106)"+Replace this use of System.out by a logger.(ÐæÈªÿÿÿÿÿ
+E	java:S106/"+Replace this use of System.out by a logger.(Þõýÿÿÿÿ
+@	java:S1061"+Replace this use of System.out by a logger.(ê÷Ê
+E	java:S1063"+Replace this use of System.out by a logger.(ƒÇãˆúÿÿÿÿ
+Q
+java:S1144,"<Remove this unused private "demoOfAfterreturningAop" method.(óÅüV
+S
+java:S11446"8Remove this unused private "demoTheBeforeAdvice" method.(–ÍÀ¢üÿÿÿÿ

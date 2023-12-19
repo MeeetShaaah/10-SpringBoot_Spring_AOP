@@ -7,11 +7,13 @@ import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.Aspect;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import com.luv2code.SpringAOPDemo.Account;
 
 @Aspect
+@Order(1)
 @Component
 public class MyDemoLoggingAspect {
 
@@ -21,7 +23,7 @@ public class MyDemoLoggingAspect {
     // running the addAccount().");
     // }
 
-    @After("execution(* com.luv2code.SpringAOPDemo.Service.*.getFortune(..))")
+    @After("execution(* com.luv2code.SpringAOPDemo.Service.*.getFortune())")
     public Object aroundGetFortunObject(ProceedingJoinPoint theProceedingJoinPoint) throws Throwable {
 
         String method = theProceedingJoinPoint.getSignature().toShortString();

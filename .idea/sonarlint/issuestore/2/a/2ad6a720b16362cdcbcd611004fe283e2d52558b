@@ -1,0 +1,15 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­ øşÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(Õ¡ÿ¦
+E	java:S106"+Replace this use of System.out by a logger.(½É˜Áùÿÿÿÿ
+E	java:S106("+Replace this use of System.out by a logger.(—ÿú›øÿÿÿÿ
+Q	java:S1251"<This block of commented-out lines of code should be removed.(£Š¦à
+Q	java:S1255"<This block of commented-out lines of code should be removed.(œ˜Í€
+F
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ
+R
+java:S1128"7Remove this unused import 'org.aspectj.lang.JoinPoint'.(¾Öùúÿÿÿÿ
+\
+java:S1128"GRemove this unused import 'org.aspectj.lang.annotation.AfterReturning'.(Ún
+T
+java:S1128"?Remove this unused import 'com.luv2code.SpringAOPDemo.Account'.(ÏÏï7
